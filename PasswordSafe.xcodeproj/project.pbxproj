@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B42FA6DB1E3C473500584356 /* displayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42FA6DA1E3C473500584356 /* displayViewController.m */; };
+		B4AC385A1E3BDCB500EC8534 /* safeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AC38591E3BDCB500EC8534 /* safeViewController.m */; };
+		B4AF12571E39C7E800E22AC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AF12561E39C7E800E22AC8 /* main.m */; };
+		B4AF125A1E39C7E800E22AC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AF12591E39C7E800E22AC8 /* AppDelegate.m */; };
+		B4AF125D1E39C7E800E22AC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AF125C1E39C7E800E22AC8 /* ViewController.m */; };
+		B4AF12601E39C7E800E22AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AF125E1E39C7E800E22AC8 /* Main.storyboard */; };
+		B4AF12621E39C7E800E22AC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AF12611E39C7E800E22AC8 /* Assets.xcassets */; };
+		B4AF12651E39C7E800E22AC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AF12631E39C7E800E22AC8 /* LaunchScreen.storyboard */; };
+		B4AF12701E39C7E800E22AC8 /* PasswordSafeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AF126F1E39C7E800E22AC8 /* PasswordSafeTests.m */; };
+		B4AF127B1E39C7E800E22AC8 /* PasswordSafeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AF127A1E39C7E800E22AC8 /* PasswordSafeUITests.m */; };
+		B4E2FA301E3A897A0048B9D8 /* AuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E2FA2F1E3A897A0048B9D8 /* AuthenticationViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4AF126C1E39C7E800E22AC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AF124A1E39C7E800E22AC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4AF12511E39C7E800E22AC8;
+			remoteInfo = PasswordSafe;
+		};
+		B4AF12771E39C7E800E22AC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AF124A1E39C7E800E22AC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4AF12511E39C7E800E22AC8;
+			remoteInfo = PasswordSafe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B42FA6D91E3C473500584356 /* displayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = displayViewController.h; sourceTree = "<group>"; };
+		B42FA6DA1E3C473500584356 /* displayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = displayViewController.m; sourceTree = "<group>"; };
+		B4AC38581E3BDCB500EC8534 /* safeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safeViewController.h; sourceTree = "<group>"; };
+		B4AC38591E3BDCB500EC8534 /* safeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = safeViewController.m; sourceTree = "<group>"; };
+		B4AF12521E39C7E800E22AC8 /* PasswordSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4AF12561E39C7E800E22AC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4AF12581E39C7E800E22AC8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B4AF12591E39C7E800E22AC8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B4AF125B1E39C7E800E22AC8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B4AF125C1E39C7E800E22AC8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B4AF125F1E39C7E800E22AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4AF12611E39C7E800E22AC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4AF12641E39C7E800E22AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B4AF12661E39C7E800E22AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4AF126B1E39C7E800E22AC8 /* PasswordSafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordSafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4AF126F1E39C7E800E22AC8 /* PasswordSafeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordSafeTests.m; sourceTree = "<group>"; };
+		B4AF12711E39C7E800E22AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4AF12761E39C7E800E22AC8 /* PasswordSafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordSafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4AF127A1E39C7E800E22AC8 /* PasswordSafeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordSafeUITests.m; sourceTree = "<group>"; };
+		B4AF127C1E39C7E800E22AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4E2FA2E1E3A897A0048B9D8 /* AuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationViewController.h; sourceTree = "<group>"; };
+		B4E2FA2F1E3A897A0048B9D8 /* AuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4AF124F1E39C7E800E22AC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4AF12681E39C7E800E22AC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4AF12731E39C7E800E22AC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4AF12491E39C7E800E22AC8 = {
+			isa = PBXGroup;
+			children = (
+				B4AF12541E39C7E800E22AC8 /* PasswordSafe */,
+				B4AF126E1E39C7E800E22AC8 /* PasswordSafeTests */,
+				B4AF12791E39C7E800E22AC8 /* PasswordSafeUITests */,
+				B4AF12531E39C7E800E22AC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4AF12531E39C7E800E22AC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4AF12521E39C7E800E22AC8 /* PasswordSafe.app */,
+				B4AF126B1E39C7E800E22AC8 /* PasswordSafeTests.xctest */,
+				B4AF12761E39C7E800E22AC8 /* PasswordSafeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4AF12541E39C7E800E22AC8 /* PasswordSafe */ = {
+			isa = PBXGroup;
+			children = (
+				B4AC38581E3BDCB500EC8534 /* safeViewController.h */,
+				B4AC38591E3BDCB500EC8534 /* safeViewController.m */,
+				B4AF12581E39C7E800E22AC8 /* AppDelegate.h */,
+				B4AF12591E39C7E800E22AC8 /* AppDelegate.m */,
+				B4AF125B1E39C7E800E22AC8 /* ViewController.h */,
+				B4AF125C1E39C7E800E22AC8 /* ViewController.m */,
+				B4AF125E1E39C7E800E22AC8 /* Main.storyboard */,
+				B42FA6D91E3C473500584356 /* displayViewController.h */,
+				B42FA6DA1E3C473500584356 /* displayViewController.m */,
+				B4E2FA2E1E3A897A0048B9D8 /* AuthenticationViewController.h */,
+				B4E2FA2F1E3A897A0048B9D8 /* AuthenticationViewController.m */,
+				B4AF12611E39C7E800E22AC8 /* Assets.xcassets */,
+				B4AF12631E39C7E800E22AC8 /* LaunchScreen.storyboard */,
+				B4AF12661E39C7E800E22AC8 /* Info.plist */,
+				B4AF12551E39C7E800E22AC8 /* Supporting Files */,
+			);
+			path = PasswordSafe;
+			sourceTree = "<group>";
+		};
+		B4AF12551E39C7E800E22AC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4AF12561E39C7E800E22AC8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4AF126E1E39C7E800E22AC8 /* PasswordSafeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4AF126F1E39C7E800E22AC8 /* PasswordSafeTests.m */,
+				B4AF12711E39C7E800E22AC8 /* Info.plist */,
+			);
+			path = PasswordSafeTests;
+			sourceTree = "<group>";
+		};
+		B4AF12791E39C7E800E22AC8 /* PasswordSafeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B4AF127A1E39C7E800E22AC8 /* PasswordSafeUITests.m */,
+				B4AF127C1E39C7E800E22AC8 /* Info.plist */,
+			);
+			path = PasswordSafeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4AF12511E39C7E800E22AC8 /* PasswordSafe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4AF127F1E39C7E800E22AC8 /* Build configuration list for PBXNativeTarget "PasswordSafe" */;
+			buildPhases = (
+				B4AF124E1E39C7E800E22AC8 /* Sources */,
+				B4AF124F1E39C7E800E22AC8 /* Frameworks */,
+				B4AF12501E39C7E800E22AC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordSafe;
+			productName = PasswordSafe;
+			productReference = B4AF12521E39C7E800E22AC8 /* PasswordSafe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4AF126A1E39C7E800E22AC8 /* PasswordSafeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4AF12821E39C7E800E22AC8 /* Build configuration list for PBXNativeTarget "PasswordSafeTests" */;
+			buildPhases = (
+				B4AF12671E39C7E800E22AC8 /* Sources */,
+				B4AF12681E39C7E800E22AC8 /* Frameworks */,
+				B4AF12691E39C7E800E22AC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4AF126D1E39C7E800E22AC8 /* PBXTargetDependency */,
+			);
+			name = PasswordSafeTests;
+			productName = PasswordSafeTests;
+			productReference = B4AF126B1E39C7E800E22AC8 /* PasswordSafeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B4AF12751E39C7E800E22AC8 /* PasswordSafeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4AF12851E39C7E800E22AC8 /* Build configuration list for PBXNativeTarget "PasswordSafeUITests" */;
+			buildPhases = (
+				B4AF12721E39C7E800E22AC8 /* Sources */,
+				B4AF12731E39C7E800E22AC8 /* Frameworks */,
+				B4AF12741E39C7E800E22AC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4AF12781E39C7E800E22AC8 /* PBXTargetDependency */,
+			);
+			name = PasswordSafeUITests;
+			productName = PasswordSafeUITests;
+			productReference = B4AF12761E39C7E800E22AC8 /* PasswordSafeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4AF124A1E39C7E800E22AC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Timothy Hsu";
+				TargetAttributes = {
+					B4AF12511E39C7E800E22AC8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 54G4PG85W9;
+					};
+					B4AF126A1E39C7E800E22AC8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B4AF12511E39C7E800E22AC8;
+					};
+					B4AF12751E39C7E800E22AC8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B4AF12511E39C7E800E22AC8;
+					};
+				};
+			};
+			buildConfigurationList = B4AF124D1E39C7E800E22AC8 /* Build configuration list for PBXProject "PasswordSafe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4AF12491E39C7E800E22AC8;
+			productRefGroup = B4AF12531E39C7E800E22AC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4AF12511E39C7E800E22AC8 /* PasswordSafe */,
+				B4AF126A1E39C7E800E22AC8 /* PasswordSafeTests */,
+				B4AF12751E39C7E800E22AC8 /* PasswordSafeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4AF12501E39C7E800E22AC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4AF12651E39C7E800E22AC8 /* LaunchScreen.storyboard in Resources */,
+				B4AF12621E39C7E800E22AC8 /* Assets.xcassets in Resources */,
+				B4AF12601E39C7E800E22AC8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4AF12691E39C7E800E22AC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4AF12741E39C7E800E22AC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4AF124E1E39C7E800E22AC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E2FA301E3A897A0048B9D8 /* AuthenticationViewController.m in Sources */,
+				B4AC385A1E3BDCB500EC8534 /* safeViewController.m in Sources */,
+				B4AF125D1E39C7E800E22AC8 /* ViewController.m in Sources */,
+				B4AF125A1E39C7E800E22AC8 /* AppDelegate.m in Sources */,
+				B4AF12571E39C7E800E22AC8 /* main.m in Sources */,
+				B42FA6DB1E3C473500584356 /* displayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4AF12671E39C7E800E22AC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4AF12701E39C7E800E22AC8 /* PasswordSafeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4AF12721E39C7E800E22AC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4AF127B1E39C7E800E22AC8 /* PasswordSafeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4AF126D1E39C7E800E22AC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4AF12511E39C7E800E22AC8 /* PasswordSafe */;
+			targetProxy = B4AF126C1E39C7E800E22AC8 /* PBXContainerItemProxy */;
+		};
+		B4AF12781E39C7E800E22AC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4AF12511E39C7E800E22AC8 /* PasswordSafe */;
+			targetProxy = B4AF12771E39C7E800E22AC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4AF125E1E39C7E800E22AC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4AF125F1E39C7E800E22AC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4AF12631E39C7E800E22AC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4AF12641E39C7E800E22AC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4AF127D1E39C7E800E22AC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4AF127E1E39C7E800E22AC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4AF12801E39C7E800E22AC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PasswordSafe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HsuTimothy.PasswordSafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B4AF12811E39C7E800E22AC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PasswordSafe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HsuTimothy.PasswordSafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B4AF12831E39C7E800E22AC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PasswordSafeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HsuTimothy.PasswordSafeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasswordSafe.app/PasswordSafe";
+			};
+			name = Debug;
+		};
+		B4AF12841E39C7E800E22AC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PasswordSafeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HsuTimothy.PasswordSafeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasswordSafe.app/PasswordSafe";
+			};
+			name = Release;
+		};
+		B4AF12861E39C7E800E22AC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PasswordSafeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HsuTimothy.PasswordSafeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PasswordSafe;
+			};
+			name = Debug;
+		};
+		B4AF12871E39C7E800E22AC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PasswordSafeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HsuTimothy.PasswordSafeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PasswordSafe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4AF124D1E39C7E800E22AC8 /* Build configuration list for PBXProject "PasswordSafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4AF127D1E39C7E800E22AC8 /* Debug */,
+				B4AF127E1E39C7E800E22AC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4AF127F1E39C7E800E22AC8 /* Build configuration list for PBXNativeTarget "PasswordSafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4AF12801E39C7E800E22AC8 /* Debug */,
+				B4AF12811E39C7E800E22AC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4AF12821E39C7E800E22AC8 /* Build configuration list for PBXNativeTarget "PasswordSafeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4AF12831E39C7E800E22AC8 /* Debug */,
+				B4AF12841E39C7E800E22AC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4AF12851E39C7E800E22AC8 /* Build configuration list for PBXNativeTarget "PasswordSafeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4AF12861E39C7E800E22AC8 /* Debug */,
+				B4AF12871E39C7E800E22AC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4AF124A1E39C7E800E22AC8 /* Project object */;
+}
