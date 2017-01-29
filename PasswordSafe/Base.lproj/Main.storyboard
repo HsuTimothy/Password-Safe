@@ -128,7 +128,7 @@
                     <navigationItem key="navigationItem" title="Your Safe" id="d0Y-lq-Wmu">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="CE8-gK-bI1">
                             <connections>
-                                <segue destination="cZ6-8z-StQ" kind="presentation" id="bLh-an-UbR"/>
+                                <segue destination="cZ6-8z-StQ" kind="presentation" identifier="addData" id="bLh-an-UbR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

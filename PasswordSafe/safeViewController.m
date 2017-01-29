@@ -74,14 +74,14 @@
     [self performSegueWithIdentifier:@"showProgram" sender:tableView];
 }
 
--(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-    displayViewController *vc;
-    vc = [segue destinationViewController];
-    
-    if (path != NULL) {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"addData"]) {
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+    } else if ([segue.identifier isEqualToString:@"showProgram"]) {
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        displayViewController *vc = (displayViewController *)[segue destinationViewController];
         vc.pID = path.row;
-    }
+        }
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
