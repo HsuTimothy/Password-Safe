@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.leftBarButtonItem = [self editButtonItem];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handle_data) name:@"reload_data" object:nil];
     // Do any additional setup after loading the view.
 }
@@ -124,6 +125,7 @@
         [defaults setObject:usernamesArray forKey:@"usernamesKey"];
         [defaults setObject:passwordsArray forKey:@"passwordsKey"];
         
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
         [tableView reloadData]; // tell table to refresh now
     }
 }
@@ -151,5 +153,10 @@ shouldReloadTableForSearchString:(NSString *)searchString {
     return YES;
 }
 
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+    [super setEditing:editing animated:animated];
+    
+    [self.tableView setEditing:editing animated:animated];
+}
 
 @end
