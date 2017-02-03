@@ -28,10 +28,15 @@
     NSString *program = [programsArray objectAtIndex:_pID];
     NSString *username = [usernamesArray objectAtIndex:_pID];
     NSString *password = [passwordsArray objectAtIndex:_pID];
-    
-    _programTextField.text = [NSString stringWithFormat: @"%@", program];
+
     _usernameTextField.text = [NSString stringWithFormat: @"%@", username];
     _passwordTextField.text = [NSString stringWithFormat: @"%@", password];
+    _usernameTextField.adjustsFontSizeToFitWidth = YES;
+    _usernameTextField.minimumFontSize = 1;
+    _passwordTextField.adjustsFontSizeToFitWidth = YES;
+    _passwordTextField.minimumFontSize = 1;
+    
+    self.title = program;
     
 }
 

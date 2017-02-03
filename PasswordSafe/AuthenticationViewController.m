@@ -38,8 +38,9 @@
                                         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error"
                                                                                             message:@"Authentication is verified through touch only."
                                                                                            delegate:self
-                                                                                  cancelButtonTitle:@"OK"
+                                                                                  cancelButtonTitle:@"Close"
                                                                                   otherButtonTitles:nil, nil];
+                                        
                                         [alertView show];
                                         // Rather than show a UIAlert here, use the error to determine if you should push to a keypad for PIN entry.
                                     });
@@ -56,6 +57,11 @@
             // Rather than show a UIAlert here, use the error to determine if you should push to a keypad for PIN entry.
         });
     }
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if(buttonIndex == 0)
+        exit(0);
 }
 
 - (void)didReceiveMemoryWarning {
