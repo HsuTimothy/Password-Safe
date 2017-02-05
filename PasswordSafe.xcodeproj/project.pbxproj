@@ -17,6 +17,7 @@
 		B4AF12651E39C7E800E22AC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AF12631E39C7E800E22AC8 /* LaunchScreen.storyboard */; };
 		B4AF12701E39C7E800E22AC8 /* PasswordSafeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AF126F1E39C7E800E22AC8 /* PasswordSafeTests.m */; };
 		B4AF127B1E39C7E800E22AC8 /* PasswordSafeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AF127A1E39C7E800E22AC8 /* PasswordSafeUITests.m */; };
+		B4DC1F311E4606EE00ED9051 /* editInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DC1F301E4606EE00ED9051 /* editInfoViewController.m */; };
 		B4E2FA301E3A897A0048B9D8 /* AuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E2FA2F1E3A897A0048B9D8 /* AuthenticationViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		B4AF12761E39C7E800E22AC8 /* PasswordSafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordSafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4AF127A1E39C7E800E22AC8 /* PasswordSafeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordSafeUITests.m; sourceTree = "<group>"; };
 		B4AF127C1E39C7E800E22AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4DC1F2F1E4606EE00ED9051 /* editInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = editInfoViewController.h; sourceTree = "<group>"; };
+		B4DC1F301E4606EE00ED9051 /* editInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = editInfoViewController.m; sourceTree = "<group>"; };
 		B4E2FA2E1E3A897A0048B9D8 /* AuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationViewController.h; sourceTree = "<group>"; };
 		B4E2FA2F1E3A897A0048B9D8 /* AuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +120,8 @@
 				B4AF125B1E39C7E800E22AC8 /* ViewController.h */,
 				B4AF125C1E39C7E800E22AC8 /* ViewController.m */,
 				B4AF125E1E39C7E800E22AC8 /* Main.storyboard */,
+				B4DC1F2F1E4606EE00ED9051 /* editInfoViewController.h */,
+				B4DC1F301E4606EE00ED9051 /* editInfoViewController.m */,
 				B42FA6D91E3C473500584356 /* displayViewController.h */,
 				B42FA6DA1E3C473500584356 /* displayViewController.m */,
 				B4E2FA2E1E3A897A0048B9D8 /* AuthenticationViewController.h */,
@@ -287,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4E2FA301E3A897A0048B9D8 /* AuthenticationViewController.m in Sources */,
+				B4DC1F311E4606EE00ED9051 /* editInfoViewController.m in Sources */,
 				B4AC385A1E3BDCB500EC8534 /* safeViewController.m in Sources */,
 				B4AF125D1E39C7E800E22AC8 /* ViewController.m in Sources */,
 				B4AF125A1E39C7E800E22AC8 /* AppDelegate.m in Sources */,

@@ -9,6 +9,7 @@
 #import "safeViewController.h"
 #import "displayViewController.h"
 #import "ViewController.h"
+#import "editInfoViewController.h"
 
 @interface safeViewController ()
 
@@ -21,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = [self editButtonItem];
+    _tableView.allowsSelectionDuringEditing = YES;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handle_data) name:@"reload_data" object:nil];
     // Do any additional setup after loading the view.
 }
@@ -34,15 +36,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
 #pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -87,7 +81,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"showProgram" sender:tableView];
+    if (_tableView.editing == YES) {
+        [self performSegueWithIdentifier:@"showEdit" sender:tableView];
+    } else {
+        [self performSegueWithIdentifier:@"showProgram" sender:tableView];
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -102,9 +100,13 @@
         NSString *programName = [searchResults objectAtIndex:path.row];
         int index = [programsArray indexOfObject:programName];
         vc.pID = index;
-    } else /*if ([segue.identifier isEqualToString:@"showProgram"])*/ {
+    } else if ([segue.identifier isEqualToString:@"showProgram"]) {
         NSIndexPath *path = [self.tableView indexPathForSelectedRow];
         displayViewController *vc = (displayViewController *)[segue destinationViewController];
+        vc.pID = path.row;
+    } else if ([segue.identifier isEqualToString:@"showEdit"]) {
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        editInfoViewController *vc = (editInfoViewController *)[segue destinationViewController];
         vc.pID = path.row;
     }
     
