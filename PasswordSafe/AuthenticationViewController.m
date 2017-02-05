@@ -21,6 +21,10 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+    [self callAuthenticate];
+}
+
+-(void)callAuthenticate {
     LAContext *myContext = [[LAContext alloc] init];
     NSError *authError = nil;
     NSString *myLocalizedReasonString = @"Please Enter Touch ID";
@@ -40,28 +44,17 @@
                                                                                            delegate:self
                                                                                   cancelButtonTitle:@"Close"
                                                                                   otherButtonTitles:nil, nil];
-                                        
                                         [alertView show];
                                         // Rather than show a UIAlert here, use the error to determine if you should push to a keypad for PIN entry.
                                     });
                                 }
                             }];
-    } else {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                                message:authError.description
-                                                               delegate:self
-                                                      cancelButtonTitle:@"OK"
-                                                      otherButtonTitles:nil, nil];
-            [alertView show];
-            // Rather than show a UIAlert here, use the error to determine if you should push to a keypad for PIN entry.
-        });
     }
 }
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if(buttonIndex == 0)
-        exit(0);
+       [self callAuthenticate];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B42FA6DB1E3C473500584356 /* displayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42FA6DA1E3C473500584356 /* displayViewController.m */; };
+		B4AB457F1E471AAC00011F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AB457E1E471AAC00011F6D /* Assets.xcassets */; };
 		B4AC385A1E3BDCB500EC8534 /* safeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AC38591E3BDCB500EC8534 /* safeViewController.m */; };
 		B4AF12571E39C7E800E22AC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AF12561E39C7E800E22AC8 /* main.m */; };
 		B4AF125A1E39C7E800E22AC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AF12591E39C7E800E22AC8 /* AppDelegate.m */; };
 		B4AF125D1E39C7E800E22AC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AF125C1E39C7E800E22AC8 /* ViewController.m */; };
 		B4AF12601E39C7E800E22AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AF125E1E39C7E800E22AC8 /* Main.storyboard */; };
-		B4AF12621E39C7E800E22AC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AF12611E39C7E800E22AC8 /* Assets.xcassets */; };
 		B4AF12651E39C7E800E22AC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AF12631E39C7E800E22AC8 /* LaunchScreen.storyboard */; };
 		B4AF12701E39C7E800E22AC8 /* PasswordSafeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AF126F1E39C7E800E22AC8 /* PasswordSafeTests.m */; };
 		B4AF127B1E39C7E800E22AC8 /* PasswordSafeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AF127A1E39C7E800E22AC8 /* PasswordSafeUITests.m */; };
@@ -41,6 +41,7 @@
 /* Begin PBXFileReference section */
 		B42FA6D91E3C473500584356 /* displayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = displayViewController.h; sourceTree = "<group>"; };
 		B42FA6DA1E3C473500584356 /* displayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = displayViewController.m; sourceTree = "<group>"; };
+		B4AB457E1E471AAC00011F6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4AC38581E3BDCB500EC8534 /* safeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safeViewController.h; sourceTree = "<group>"; };
 		B4AC38591E3BDCB500EC8534 /* safeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = safeViewController.m; sourceTree = "<group>"; };
 		B4AF12521E39C7E800E22AC8 /* PasswordSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +51,6 @@
 		B4AF125B1E39C7E800E22AC8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B4AF125C1E39C7E800E22AC8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B4AF125F1E39C7E800E22AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B4AF12611E39C7E800E22AC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4AF12641E39C7E800E22AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4AF12661E39C7E800E22AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4AF126B1E39C7E800E22AC8 /* PasswordSafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordSafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,8 +125,8 @@
 				B42FA6D91E3C473500584356 /* displayViewController.h */,
 				B42FA6DA1E3C473500584356 /* displayViewController.m */,
 				B4E2FA2E1E3A897A0048B9D8 /* AuthenticationViewController.h */,
+				B4AB457E1E471AAC00011F6D /* Assets.xcassets */,
 				B4E2FA2F1E3A897A0048B9D8 /* AuthenticationViewController.m */,
-				B4AF12611E39C7E800E22AC8 /* Assets.xcassets */,
 				B4AF12631E39C7E800E22AC8 /* LaunchScreen.storyboard */,
 				B4AF12661E39C7E800E22AC8 /* Info.plist */,
 				B4AF12551E39C7E800E22AC8 /* Supporting Files */,
@@ -227,7 +227,7 @@
 				TargetAttributes = {
 					B4AF12511E39C7E800E22AC8 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 54G4PG85W9;
+						DevelopmentTeam = YEM5B56G25;
 					};
 					B4AF126A1E39C7E800E22AC8 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -265,7 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4AF12651E39C7E800E22AC8 /* LaunchScreen.storyboard in Resources */,
-				B4AF12621E39C7E800E22AC8 /* Assets.xcassets in Resources */,
+				B4AB457F1E471AAC00011F6D /* Assets.xcassets in Resources */,
 				B4AF12601E39C7E800E22AC8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,10 +440,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = YEM5B56G25;
 				INFOPLIST_FILE = PasswordSafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.HsuTimothy.PasswordSafe;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HsuTimothy.Password-Safe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -452,10 +454,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = YEM5B56G25;
 				INFOPLIST_FILE = PasswordSafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.HsuTimothy.PasswordSafe;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HsuTimothy.Password-Safe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
