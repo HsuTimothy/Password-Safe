@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-PasswordSafe.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PasswordSafeTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PasswordSafeUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SSKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>VENTouchLock.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>44A55CE636DC2E41F01BB4F422E34B67</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4EE365527B3D67C68F3E2FC8A913BE79</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D35ECEC304E7431CEF1CC24BDD17F194</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCDE3A92375108ECCBE24D056567C885</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF4E06AFC4C8DF5AA0F19007687F6706</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

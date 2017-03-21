@@ -29,6 +29,7 @@
     NSString *username = [usernamesArray objectAtIndex:_pID];
     NSString *password = [passwordsArray objectAtIndex:_pID];
 
+    _usernameTextField.numberOfLines = 1;
     _usernameTextField.text = [NSString stringWithFormat: @"%@", username];
     _passwordTextField.text = [NSString stringWithFormat: @"%@", password];
     _usernameTextField.adjustsFontSizeToFitWidth = YES;

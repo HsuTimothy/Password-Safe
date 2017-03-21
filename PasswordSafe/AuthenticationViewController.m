@@ -8,6 +8,7 @@
 
 #import "AuthenticationViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>
+#import "VENTouchLock.h"
 
 @interface AuthenticationViewController ()
 
@@ -15,14 +16,12 @@
 
 @implementation AuthenticationViewController
 
-- (void)viewDidLoad {
+-(void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
--(void)viewWillAppear:(BOOL)animated {
     [self callAuthenticate];
 }
+
+
 
 -(void)callAuthenticate {
     LAContext *myContext = [[LAContext alloc] init];
@@ -37,25 +36,44 @@
                                     dispatch_async(dispatch_get_main_queue(), ^{
                                         [self performSegueWithIdentifier:@"showList" sender:nil];
                                     });
-                                } else {
-                                    dispatch_async(dispatch_get_main_queue(), ^{
-                                        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                                                            message:@"Authentication is verified through touch only."
-                                                                                           delegate:self
-                                                                                  cancelButtonTitle:@"Close"
-                                                                                  otherButtonTitles:nil, nil];
-                                        [alertView show];
-                                        // Rather than show a UIAlert here, use the error to determine if you should push to a keypad for PIN entry.
-                                    });
+                                } else if (error){
+                                    NSString *errorMessage;
+                                    BOOL showError = NO;
+                                    switch (error.code) {
+                                        case LAErrorAuthenticationFailed:
+                                            errorMessage = @"Sorry couldn't autheticate";
+                                            showError = YES;
+                                            break;
+                                        case LAErrorPasscodeNotSet:
+                                            errorMessage = @"No Passcode has been set";
+                                            showError = YES;
+                                            break;
+                                        case LAErrorTouchIDNotEnrolled:
+                                            errorMessage = @"Touch ID has no enrolled fingers";
+                                            showError = YES;
+                                            break;
+                                        case LAErrorUserCancel:
+                                            [self callAuthenticate];
+                                        default:
+                                            showError = NO;
+                                            break;
+                                    }
+                                    if (showError) {
+                                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                                        message:errorMessage
+                                                                                       delegate:nil
+                                                                              cancelButtonTitle:@"Ok"
+                                                                              otherButtonTitles:nil];
+                                        [alert show];
+                                        
+                                    }
                                 }
                             }];
+    } else {
+        [self performSegueWithIdentifier:@"showList" sender:nil];
     }
 }
 
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    if(buttonIndex == 0)
-       [self callAuthenticate];
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

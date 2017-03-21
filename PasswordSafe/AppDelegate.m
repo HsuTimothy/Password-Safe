@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <VENTouchLock/VENTouchLock.h>
+#import <LocalAuthentication/LocalAuthentication.h>
 
 @interface AppDelegate ()
 
@@ -16,8 +18,65 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [[VENTouchLock sharedInstance] setKeychainService:@"Account Information Safe"
+                                      keychainAccount:@"User"
+                                        touchIDReason:@"Touch to Authenticate"
+                                 passcodeAttemptLimit:-1
+                            splashViewControllerClass:[VENTouchLockSplashViewController class]];
+    
     return YES;
+}
+
+-(BOOL)callAuthenticate {
+    LAContext *myContext = [[LAContext alloc] init];
+    NSError *authError = nil;
+    NSString *myLocalizedReasonString = @"Please Enter Touch ID";
+    BOOL val = false;
+    if ([myContext canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&authError]) {
+        [myContext evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
+                  localizedReason:myLocalizedReasonString
+                            reply:^(BOOL success, NSError *error) {
+                                if (success) {
+                                    dispatch_async(dispatch_get_main_queue(), ^{
+                                    });
+                                    BOOL *val = true;
+                                } else if (error){
+                                    NSString *errorMessage;
+                                    BOOL showError = NO;
+                                    switch (error.code) {
+                                        case LAErrorAuthenticationFailed:
+                                            errorMessage = @"Sorry couldn't autheticate";
+                                            showError = YES;
+                                            break;
+                                        case LAErrorPasscodeNotSet:
+                                            errorMessage = @"No Passcode has been set";
+                                            showError = YES;
+                                            break;
+                                        case LAErrorTouchIDNotEnrolled:
+                                            errorMessage = @"Touch ID has no enrolled fingers";
+                                            showError = YES;
+                                            break;
+                                        case LAErrorUserCancel:
+                                            errorMessage = @"Pressed Cancel";
+                                        default:
+                                            showError = NO;
+                                            break;
+                                    }
+                                    if (showError) {
+                                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                                        message:errorMessage
+                                                                                       delegate:nil
+                                                                              cancelButtonTitle:@"Ok"
+                                                                              otherButtonTitles:nil];
+                                        [alert show];
+                                        
+                                    }
+                                }
+                            }];
+    } else {
+        return false;
+    }
+    return val;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -18,6 +18,9 @@
 @implementation safeViewController {
     NSArray *searchResults;
 }
+- (IBAction)goToSettings:(id)sender {
+    [self performSegueWithIdentifier:@"showSettings" sender:self];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
